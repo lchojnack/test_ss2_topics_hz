@@ -38,11 +38,9 @@ class testNode(Node):
         self.transition_event = TransitionEvent()
 
     def engage_callback(self, msg):
-        # print(msg)
         self.engage = msg
 
     def transition_callback(self, msg):
-        # print(msg.go/al_state.label)
         self.transition_event = msg
 
     def get_engage(self):
